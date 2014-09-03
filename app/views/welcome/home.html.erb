@@ -1,0 +1,21 @@
+<h1 style="text-align:center;">This is my home page.</h1>
+
+<div style="text-align:center;">
+
+<!-- this is a relative tag -->
+
+<%= image_tag("angry-dog.jpg", height: "50%", width: "50%") %>
+
+</div>
+
+<p>
+
+<a href="/members">Members Index</a><br />
+
+<!-- But Rails doesn't like you using href. It'll work, but Rails would just prefer you using: -->
+
+<%= link_to 'Groups', groups_path %>
+
+<%= link_to 'About Us', about_path %>
+
+</p>
